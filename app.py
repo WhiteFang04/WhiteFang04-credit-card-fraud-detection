@@ -7,14 +7,14 @@ import joblib
 st.title("Real-Time Credit Card Fraud Detection")
 
 # Load model and scalers
-model = joblib.load(r"C:\Users\nares\OneDrive\Desktop\credit-card-fraud-detection\models\logistic_model.pkl")
-scaler_amount = joblib.load(r"C:\Users\nares\OneDrive\Desktop\credit-card-fraud-detection\models\scaler_amount.pkl")
-scaler_time = joblib.load(r"C:\Users\nares\OneDrive\Desktop\credit-card-fraud-detection\models\scaler_time.pkl")
+model = joblib.load("logistic_model.pkl")
+scaler_amount = joblib.load("scaler_amount.pkl")
+scaler_time = joblib.load("scaler_time.pkl")
 
 st.sidebar.header("Transaction Input Features")
 
 # Define correct feature order
-feature_names = joblib.load(r"C:\Users\nares\OneDrive\Desktop\credit-card-fraud-detection\models\feature_columns.pkl")
+feature_names = joblib.load("feature_columns.pkl")
 
 def user_input_features():
     st.sidebar.markdown("### Input Transaction Details")
