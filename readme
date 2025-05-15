@@ -1,0 +1,9 @@
+Features Explanation:
+
+Time and Amount are the only original features.
+
+V1 to V28 are principal components derived using PCA to protect user confidentiality.
+
+These components are scaled and encoded features that hold high predictive power for fraud detection.
+
+Due to anonymization, their exact business meaning is not known, but they are statistically significant.
