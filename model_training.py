@@ -13,7 +13,7 @@ from imblearn.over_sampling import SMOTE
 import joblib
 
 # Load data
-df = pd.read_csv(r"C:\Users\nares\OneDrive\Desktop\credit-card-fraud-detection\data\creditcard.csv")
+df = pd.read_csv("creditcard.csv")
 
 # Feature scaling
 scaler_amount = StandardScaler()
